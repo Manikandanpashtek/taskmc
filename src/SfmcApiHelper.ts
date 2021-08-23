@@ -57,7 +57,7 @@ export default class SfmcApiHelper
         };
 
         return self.getOAuthTokenHelper(headers, postBody);
-    }
+    } 
 
     /**
      * getOAuthTokenHelper: Helper method to POST the given header & body to the SFMC Auth endpoint
@@ -68,7 +68,7 @@ export default class SfmcApiHelper
         return new Promise<any>((resolve, reject) =>
         {
             // POST to Marketing Cloud REST Auth service and get back an OAuth access token.
-            let sfmcAuthServiceApiUrl = "https://auth.exacttargetapis.com/v1/requestToken";
+            let sfmcAuthServiceApiUrl = "https://auth.exacttargetapis.com/v2/requestToken";
             axios.post(sfmcAuthServiceApiUrl, postBody, {"headers" : headers})
             .then((response: any) => {
                 // success
