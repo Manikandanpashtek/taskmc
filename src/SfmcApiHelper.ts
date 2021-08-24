@@ -28,8 +28,8 @@ export default class SfmcApiHelper
 
         let postBody = {
             'grant_type':'client_credentials',
-            'client_id': clientId,
-            'client_secret': clientSecret
+            'client_id': 'vx35m6t4lg4sb12qdftbtd12',
+            'client_secret': 'YaJcbyCZPxSfMg4Oz9JpDPs4',
         };
 
         return self.getOAuthTokenHelper(headers, postBody);
