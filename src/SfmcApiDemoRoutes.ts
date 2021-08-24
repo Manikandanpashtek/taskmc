@@ -27,7 +27,8 @@ export default class SfmcApiDemoRoutes
 
         req.session.oauthAccessToken = "";
         req.session.oauthAccessTokenExpiry = "";
-        console.log("mmmmm:",req.session);
+        console.log("AccessToken",req.session.oauthAccessToken);
+        console.log("Expiry:",req.session.oauthAccessTokenExpiry);
         
         Utils.logInfo("getOAuthAccessToken route entered. SessionId = " + sessionId);
 
