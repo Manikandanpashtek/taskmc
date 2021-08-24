@@ -109,6 +109,8 @@ export default class SfmcApiHelper
         let sessionId = req.session.id;
         Utils.logInfo("loadData entered. SessionId = " + sessionId);
 
+         console.log("Reqsession:"+ req.session);
+         
         if (req.session.oauthAccessToken)
         {
             Utils.logInfo("Using OAuth token: " + req.session.oauthAccessToken);
