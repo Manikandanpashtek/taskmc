@@ -23,7 +23,7 @@ export default class SfmcApiHelper
         Utils.logInfo("Using specified ClientID and ClientSecret to get OAuth token...");
 
         let headers = {
-            'Content-Type': 'application/json;',
+            'Content-Type': 'application/json',
         };
 
         let postBody = {
