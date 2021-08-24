@@ -147,11 +147,12 @@ export default class SfmcApiHelper
         Utils.logInfo("loadDataHelper called.");
         Utils.logInfo("Loading sample data into Data Extension: " + self._deExternalKey);
         Utils.logInfo("Using OAuth token: " + oauthAccessToken);
+        Utils.logInfo("json.data:"+jsonData);
 
         return new Promise<any>((resolve, reject) =>
         {
             let headers = {
-                'Content-Type': 'application/json;charset=UTF-8',
+                'Content-Type': 'application/json',
                 'Authorization': 'Bearer ' + oauthAccessToken
             };
 
