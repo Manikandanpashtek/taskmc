@@ -97,7 +97,7 @@ export default class SfmcAppDemoRoutes
     {
         let self = this;
         let sessionId = req.session.id;
-        let clientId = process.env.DF18DEMO_CLIENTID;
+        let clientId = process.env.vx35m6t4lg4sb12qdftbtd12;
         let clientSecret = process.env.DF18DEMO_CLIENTSECRET;
 
         req.session.oauthAccessToken = "";
