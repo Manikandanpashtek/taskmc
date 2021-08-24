@@ -19,6 +19,7 @@ export default class SfmcApiDemoRoutes
      */
     public getOAuthAccessToken(req: express.Request, res: express.Response)
     {
+        
         let self = this;
         let sessionId = req.session.id;
         let clientId = 'vx35m6t4lg4sb12qdftbtd12';
@@ -26,7 +27,8 @@ export default class SfmcApiDemoRoutes
 
         req.session.oauthAccessToken = "";
         req.session.oauthAccessTokenExpiry = "";
-
+        console.log("mmmmm:",req.session);
+        
         Utils.logInfo("getOAuthAccessToken route entered. SessionId = " + sessionId);
 
         if (clientId && clientSecret)
