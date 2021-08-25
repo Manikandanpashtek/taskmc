@@ -22,13 +22,12 @@ export default class SfmcApiDemoRoutes
         
         let self = this;
         let sessionId = req.session.id;
-        let clientId = 'vx35m6t4lg4sb12qdftbtd12';
-        let clientSecret = 'YaJcbyCZPxSfMg4Oz9JpDPs4';
+        let clientId = process.env.DF18DEMO_CLIENTID;
+        let clientSecret = process.env.DF18DEMO_CLIENTSECRET;
 
         req.session.oauthAccessToken = "";
         req.session.oauthAccessTokenExpiry = "";
-        console.log("AccessToken",req.session.oauthAccessToken);
-        console.log("Expiry:",req.session.oauthAccessTokenExpiry);
+       
         
         Utils.logInfo("getOAuthAccessToken route entered. SessionId = " + sessionId);
 
